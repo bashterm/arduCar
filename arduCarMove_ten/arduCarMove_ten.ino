@@ -1,6 +1,5 @@
-/* arduCarMove_Ten.ino 
+/* arduCar.ino 
    A program for controlling an RC car hacked with an arduino.
-   Moves the car forward for ten seconds
    Please note that this program does not contain anything that makes the car
    move. It only contains the base code.
    
@@ -28,11 +27,11 @@
    Connect VCC2 to whatever voltage your original Car used. (You can tell by looking at the battery)
 */
 //Make variables that correspond with output pins. Change these numbers if you use different Pins
-const int driveFWpin = 9; //1A on the L293D
-const int driveBWpin = 8; //2A on the L293D
-const int steerLEpin = 6; //4A on the L293D
-const int steerRIpin = 7; //3A on the L293D
-const int driveSpeedPin = 10; //1,2EN on the L293D
+int driveFWpin = 9; //1A on the L293D
+int driveBWpin = 8; //2A on the L293D
+int steerLEpin = 6; //4A on the L293D
+int steerRIpin = 7; //3A on the L293D
+int driveSpeedPin = 10; //1,2EN on the L293D
 
 void setup() {
   //Set up all switching pins as outputs
@@ -43,9 +42,9 @@ void setup() {
 }
 
 void loop() {
- driveForward(500);
- delay(10000);
- stopDrive();
+  driveForward(250);
+  delay(10000);
+  stopDrive();
 }
 void driveForward(int fastness) {
  digitalWrite(driveBWpin, LOW);
