@@ -1,5 +1,7 @@
 /* arduCar.ino 
    A program for controlling an RC car hacked with an arduino.
+   Please note that this program does not contain anything that makes the car
+   move. It only contains the base code.
    
    Author: Aidan Sciortino
    Contributors:
@@ -52,4 +54,20 @@ void driveBackward(int fastness) {
  digitalWrite(driveFWpin, LOW);
  analogWrite(driveSpeedPin, fastness);
  digitalWrite(driveBWpin, HIGH);
+}
+void steerRight(){
+  digitalWrite(steerLEpin, LOW);
+  digitalWrite(steerRIpin, HIGH);
+}
+void steerLeft(){
+  digitalWrite(steerRIpin, LOW);
+  digitalWrite(steerLEpin, HIGH);
+}
+void stopSteer(){
+  digitalWrite(steerRIpin, LOW);
+  digitalWrite(steerLEpin, LOW);
+}
+void stopDrive(){
+ digitalWrite(driveFWpin, LOW);
+ digitalWrite(driveBWpin, LOW); 
 }
