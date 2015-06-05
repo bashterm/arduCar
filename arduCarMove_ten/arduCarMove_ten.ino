@@ -28,16 +28,16 @@
 //Make variables that correspond with output pins. Change these numbers if you use different Pins
 int driveFWpin = 9; //1A on the L293D
 int driveBWpin = 8; //2A on the L293D
-int steerLEpin = 6; //4A on the L293D
-int steerRIpin = 7; //3A on the L293D
+int steerLEpin = 7; //4A on the L293D
+int steerRIpin = 6; //3A on the L293D
 int driveSpeedPin = 10; //1,2EN on the L293D
 
 void setup() {
   //Set up all switching pins as outputs
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
+  pinMode(driveFWpin, OUTPUT);
+  pinMode(driveBWpin, OUTPUT);
+  pinMode(steerLEpin, OUTPUT);
+  pinMode(steerRIpin, OUTPUT);
 }
 
 void loop() {
