@@ -1,7 +1,6 @@
-/* arduCar.ino 
+/* arduCarMove_ten.ino 
    A program for controlling an RC car hacked with an arduino.
-   Please note that this program does not contain anything that makes the car
-   move. It only contains the base code.
+   This program makes the car move forward for ten seconds.
    
    Author: Aidan Sciortino
    Contributors:

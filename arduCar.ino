@@ -1,4 +1,4 @@
-/* arduCarMove_Ten.ino 
+/* arduCar.ino 
    A program for controlling an RC car hacked with an arduino.
    Moves the car forward for ten seconds
    Please note that this program does not contain anything that makes the car
@@ -43,9 +43,7 @@ void setup() {
 }
 
 void loop() {
- driveForward(500);
- delay(10000);
- stopDrive();
+ //main code goes here
 }
 void driveForward(int fastness) {
  digitalWrite(driveBWpin, LOW);
