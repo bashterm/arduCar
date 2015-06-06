@@ -1,6 +1,6 @@
 /* arduCarMove_Ten.ino 
    A program for controlling an RC car hacked with an arduino.
-   Turns the wheels left and right
+   This program makes the car do "donuts" or turn around and around.
    
    Author: Aidan Sciortino
    Contributors:
@@ -42,11 +42,8 @@ void setup() {
 
 void loop() {
  steerLeft();
- delay(1000);
- stopSteer();
- steerRight();
- delay(1000);
- stopSteer();
+ driveForward(250);
+ delay(10000);
 }
 void driveForward(int fastness) {
  digitalWrite(driveBWpin, LOW);
