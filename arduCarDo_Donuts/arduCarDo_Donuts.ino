@@ -42,7 +42,7 @@ void setup() {
 
 void loop() {
  steerLeft();
- driveForward(250);
+ driveForward(1000);
  delay(10000);
 }
 void driveForward(int fastness) {
